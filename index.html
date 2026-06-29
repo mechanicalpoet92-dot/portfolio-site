@@ -5,38 +5,72 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mohamed Rady | Senior Art Director</title>
   <meta name="description" content="Poster-style portfolio CV for Mohamed Rady, Senior Art Director.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="cursor-glow" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="mark" href="#top">MR</a>
-    <nav class="nav" aria-label="Portfolio sections">
-      <a href="#dna">DNA</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
-    </nav>
-  </header>
-  <main id="top" class="poster-shell">
-    <section class="hero" aria-labelledby="page-title">
-      <p class="role reveal">Senior Art Director</p>
-      <h1 id="page-title" class="hero-title" data-parallax="title">Mohamed<br>Rady</h1>
-      <div class="portrait-stage" data-parallax="portrait">
-        <img class="portrait" src="assets/portrait.svg" alt="Portrait placeholder for Mohamed Rady">
-        <div class="circular-text" id="circularText" aria-hidden="true"></div>
+  <main id="top" class="poster" aria-labelledby="page-title">
+    <section class="hero-copy" aria-label="Headline">
+      <h1 id="page-title" class="hero-name">Mohamed<br>Rady</h1>
+      <p class="role">Senior Art Director</p>
+    </section>
+
+    <img class="portrait" src="assets/portrait.svg" alt="Mohamed Rady standing portrait">
+
+    <svg class="circular-text" viewBox="0 0 220 220" aria-hidden="true">
+      <defs>
+        <path id="circlePath" d="M110,110 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0" />
+      </defs>
+      <text>
+        <textPath href="#circlePath" startOffset="0">Senior Art Director · Senior Art Director ·</textPath>
+      </text>
+    </svg>
+
+    <p class="vertical-tag" aria-hidden="true">Egypt Photographer</p>
+    <div class="green-arrow arrow-main" aria-hidden="true"></div>
+
+    <section id="dna" class="panel card-dna" aria-labelledby="dna-title">
+      <h2 id="dna-title">Creative DNA</h2>
+      <div class="stats" id="stats"></div>
+      <p id="bio"></p>
+    </section>
+
+    <section class="education" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <p id="educationText"></p>
+    </section>
+
+    <section class="skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <ul id="skillsList"></ul>
+    </section>
+
+    <section class="portfolio-block" aria-labelledby="portfolio-title">
+      <a class="behance-button" id="behanceLink" href="https://www.behance.net/muhammedrady3a" target="_blank" rel="noreferrer" aria-label="Open Mohamed Rady portfolio on Behance">Bē</a>
+      <div class="portfolio-copy">
+        <h2 id="portfolio-title">Portfolio</h2>
+        <p>Click my world.</p>
+        <span class="portfolio-arrow" aria-hidden="true"></span>
+        <span id="portfolioUrl"></span>
       </div>
-      <p class="vertical-tag" aria-hidden="true">Egypt Photographer</p>
-      <div class="green-arrow" aria-hidden="true"><span></span></div>
     </section>
-    <section id="dna" class="card card-dna reveal"><h2>Creative DNA</h2><div class="stats" id="stats"></div><p id="bio"></p></section>
-    <section class="education reveal"><h2>Education</h2><p id="educationText"></p></section>
-    <section class="skills reveal"><h2>Skills</h2><ul id="skillsList"></ul></section>
-    <section class="portfolio-block reveal">
-      <a class="behance-button" id="behanceLink" href="https://www.behance.net/muhammedrady3a" target="_blank" rel="noreferrer">Bē</a>
-      <div><h2>Portfolio</h2><p>click my world.</p><span id="portfolioUrl"></span></div>
+
+    <section class="panel clients" aria-labelledby="clients-title">
+      <h2 id="clients-title"><span>Mega</span> Clients</h2>
+      <div class="client-grid" id="clientsGrid"></div>
     </section>
-    <section class="card clients reveal"><h2><span>Mega</span> Clients</h2><div class="client-grid" id="clientsGrid"></div></section>
-    <section id="journey" class="card journey reveal"><h2>Creative Journey</h2><ol class="timeline" id="timeline"></ol></section>
+
+    <section id="journey" class="panel journey" aria-labelledby="journey-title">
+      <h2 id="journey-title">Creative Journey</h2>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <section id="contact" class="contact" aria-label="Contact details">
+      <ul id="contactList"></ul>
+    </section>
   </main>
-  <footer id="contact" class="contact reveal"><ul id="contactList"></ul></footer>
   <script src="script.js"></script>
 </body>
 </html>
