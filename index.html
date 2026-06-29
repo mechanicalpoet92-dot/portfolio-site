@@ -11,64 +11,68 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main id="top" class="poster" aria-labelledby="page-title">
-    <section class="hero-copy" aria-label="Headline">
-      <h1 id="page-title" class="hero-name">Mohamed<br>Rady</h1>
-      <p class="role">Senior Art Director</p>
-    </section>
-
-    <img class="portrait" src="assets/portrait.svg" alt="Mohamed Rady standing portrait">
-
-    <svg class="circular-text" viewBox="0 0 220 220" aria-hidden="true">
-      <defs>
-        <path id="circlePath" d="M110,110 m-86,0 a86,86 0 1,1 172,0 a86,86 0 1,1 -172,0" />
-      </defs>
-      <text>
-        <textPath href="#circlePath" startOffset="0">Senior Art Director · Senior Art Director ·</textPath>
-      </text>
-    </svg>
-
-    <p class="vertical-tag" aria-hidden="true">Egypt Photographer</p>
-    <div class="green-arrow arrow-main" aria-hidden="true"></div>
-
-    <section id="dna" class="panel card-dna" aria-labelledby="dna-title">
-      <h2 id="dna-title">Creative DNA</h2>
-      <div class="stats" id="stats"></div>
-      <p id="bio"></p>
-    </section>
-
-    <section class="education" aria-labelledby="education-title">
-      <h2 id="education-title">Education</h2>
-      <p id="educationText"></p>
-    </section>
-
-    <section class="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title">Skills</h2>
-      <ul id="skillsList"></ul>
-    </section>
-
-    <section class="portfolio-block" aria-labelledby="portfolio-title">
-      <a class="behance-button" id="behanceLink" href="https://www.behance.net/muhammedrady3a" target="_blank" rel="noreferrer" aria-label="Open Mohamed Rady portfolio on Behance">Bē</a>
-      <div class="portfolio-copy">
-        <h2 id="portfolio-title">Portfolio</h2>
-        <p>Click my world.</p>
-        <span class="portfolio-arrow" aria-hidden="true"></span>
-        <span id="portfolioUrl"></span>
+  <main class="page-shell">
+    <section class="poster" aria-label="Poster CV for Mohamed Rady">
+      <div class="hero-name" aria-hidden="true">
+        <span>Mohamed</span>
+        <span>Rady</span>
       </div>
-    </section>
+      <h1 class="sr-only">Mohamed Rady - Senior Art Director</h1>
+      <p class="role-label">Senior Art Director</p>
 
-    <section class="panel clients" aria-labelledby="clients-title">
-      <h2 id="clients-title"><span>Mega</span> Clients</h2>
-      <div class="client-grid" id="clientsGrid"></div>
-    </section>
+      <img class="portrait" src="assets/portrait.png" alt="Mohamed Rady standing portrait">
 
-    <section id="journey" class="panel journey" aria-labelledby="journey-title">
-      <h2 id="journey-title">Creative Journey</h2>
-      <ol class="timeline" id="timeline"></ol>
-    </section>
+      <svg class="circle-text" viewBox="0 0 200 200" aria-hidden="true">
+        <defs>
+          <path id="circlePath" d="M 100,100 m -72,0 a 72,72 0 1,1 144,0 a 72,72 0 1,1 -144,0" />
+        </defs>
+        <text>
+          <textPath href="#circlePath">SENIOR ART DIRECTOR · SENIOR ART DIRECTOR ·</textPath>
+        </text>
+      </svg>
 
-    <section id="contact" class="contact" aria-label="Contact details">
-      <ul id="contactList"></ul>
+      <p class="vertical-tag" aria-hidden="true">Egypt Photographer</p>
+      <div class="green-arrow arrow-main" aria-hidden="true"></div>
+
+      <section id="dna" class="panel card-dna" aria-labelledby="dna-title">
+        <h2 id="dna-title">Creative DNA</h2>
+        <div class="stats" id="stats"></div>
+        <p id="bio"></p>
+      </section>
+
+      <section class="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <p id="educationText"></p>
+      </section>
+
+      <section class="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <ul id="skillsList"></ul>
+      </section>
+
+      <section class="card-portfolio" aria-labelledby="portfolio-title">
+        <a class="behance-button" id="behanceLink" href="https://www.behance.net/muhammedrady3a" target="_blank" rel="noreferrer" aria-label="Open Mohamed Rady portfolio on Behance">Bē</a>
+        <div class="portfolio-copy">
+          <h2 id="portfolio-title">Portfolio</h2>
+          <p>click my world.</p>
+          <span class="portfolio-arrow" aria-hidden="true"></span>
+        </div>
+        <span id="portfolioUrl"></span>
+      </section>
+
+      <section class="panel card-clients" aria-labelledby="clients-title">
+        <h2 id="clients-title"><span>Mega</span> Clients</h2>
+        <div class="clients-grid" id="clientsGrid"></div>
+      </section>
+
+      <section id="journey" class="panel card-journey" aria-labelledby="journey-title">
+        <h2 id="journey-title">Creative Journey</h2>
+        <ol class="timeline" id="timeline"></ol>
+      </section>
+
+      <section id="contact" class="contacts" aria-label="Contact details">
+        <ul id="contactList"></ul>
+      </section>
     </section>
   </main>
   <script src="script.js"></script>
